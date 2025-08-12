@@ -2,8 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { SearchOutlined } from '@ant-design/icons';
-import { Button, Flex, Tooltip } from 'antd';
+import Button from '@mui/material/Button';
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,10 +20,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <Button type="primary" icon={<SearchOutlined />}>
-          Search
-        </Button>
-
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <Button variant="contained">Contained</Button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
