@@ -4,6 +4,7 @@ import { BrowserRouter ,Routes ,Route } from 'react-router-dom';
 import Login from './pages/Login/Login';
 import NavBar from './components/NavBar/NavBar';
 import InfoNosotros from './components/InfoNosotros/InfoNosotros';
+import Register from './pages/Register/Register';
 
 
 
@@ -23,6 +24,8 @@ function App() {
           <Route path='/catalogo' element={<></>}/>
           <Route path='/donaciones' element={<></>}/>
           <Route path='/users/login' element={<Login/>}/>
+          <Route path='/users' element={<Register/>}/>
+
         </Routes>
       </BrowserRouter>
     </>
